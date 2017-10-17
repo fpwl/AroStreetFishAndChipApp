@@ -1,0 +1,806 @@
+.orderNowButton {
+  background-color: #fff800;
+  border-radius: 5px;
+  width: 325px;
+  height: 105px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  text-decoration: none; }
+
+#doneButton {
+  background-color: #fff800;
+  border-radius: 5px;
+  width: 220px;
+  height: 55px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-decoration: none; }
+
+.homeIconButton,
+.locationIconButton,
+.helpIconButton {
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+  cursor: pointer; }
+
+.orderHomeIconButton,
+.orderLocationIconButton,
+.orderHelpIconButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .orderHomeIconButton .orderHomeIcon, .orderHomeIconButton .orderLocationIcon, .orderHomeIconButton .orderHelpIcon,
+  .orderLocationIconButton .orderHomeIcon,
+  .orderLocationIconButton .orderLocationIcon,
+  .orderLocationIconButton .orderHelpIcon,
+  .orderHelpIconButton .orderHomeIcon,
+  .orderHelpIconButton .orderLocationIcon,
+  .orderHelpIconButton .orderHelpIcon {
+    width: 35px; }
+
+.closeButton {
+  width: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
+.yesButton, .goBackButton {
+  width: 95px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer; }
+
+.goBackButton {
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: center;
+  font-weight: 400;
+  margin: 2.5px;
+  cursor: pointer; }
+
+.noButton, .confirmButton {
+  width: 95px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: center;
+  background-color: #fff800;
+  font-weight: 400;
+  margin: 2.5px;
+  cursor: pointer; }
+
+.confirmButton {
+  width: 155px;
+  cursor: pointer; }
+
+.navButton, .maoriNav {
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background: #2d2d2d;
+  width: 90px;
+  height: 30px;
+  border-radius: 3px;
+  text-align: center;
+  flex-direction: row;
+  cursor: pointer; }
+
+a {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.activeButton {
+  background: white; }
+  .activeButton a {
+    color: #2d2d2d; }
+
+.quantityButton {
+  min-width: 30px;
+  background-color: #fff800;
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+  cursor: pointer; }
+
+.cartQuantityButton, .cartQuantityButtonAdd {
+  width: 45vw;
+  background-color: #fff800;
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: center;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer; }
+
+.cartQuantityButtonAdd {
+  margin-right: 2.5px;
+  cursor: pointer; }
+
+.checkOutButton {
+  width: 80vw;
+  height: 50px;
+  background-color: #fff800;
+  color: #1e1e1e;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: center;
+  border: none;
+  cursor: pointer; }
+
+#maoriToggle, #englishToggle {
+  background: transparent;
+  border: none;
+  padding: 2.5px;
+  color: #1e1e1e;
+  font-family: "Open Sans", sans-serif;
+  color: #fff800;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer; }
+
+.condensedLogo {
+  max-width: 75vw; }
+
+.mainLogo {
+  display: none; }
+
+.orderMainLogo {
+  width: 190px; }
+
+.desktopCheckoutImage {
+  max-width: 414px; }
+
+.locationIcon,
+.helpIcon {
+  width: 60px; }
+
+#CartContainer {
+  width: 100%;
+  color: #1e1e1e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px; }
+  #CartContainer tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    #CartContainer tr td {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #CartContainer tr #product_price {
+      display: none; }
+    #CartContainer tr #product_quantity {
+      width: 3vw;
+      text-align: center;
+      font-weight: 600; }
+    #CartContainer tr .product_title {
+      width: 35vw;
+      text-align: left;
+      justify-content: flex-start; }
+    #CartContainer tr #sub_price {
+      width: 10vw;
+      text-align: center; }
+    #CartContainer tr #cartQuantityButton {
+      width: 10vw;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+      #CartContainer tr #cartQuantityButton button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+body {
+  background: #2d2d2d;
+  width: 100%;
+  height: 100%; }
+
+.homePopUp, .locationPopUp, .helpPopUp, .menuPopUp, .checkoutPopUp {
+  display: none; }
+
+.popUpContainer {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(30, 30, 30, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .popUpContainer .popUpBox {
+    margin: 10px;
+    text-align: center; }
+    .popUpContainer .popUpBox .popUpHeader {
+      background-color: #fff800;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      width: 350px; }
+      .popUpContainer .popUpBox .popUpHeader .close {
+        position: absolute;
+        margin: 10px; }
+      .popUpContainer .popUpBox .popUpHeader h1 {
+        color: #1e1e1e;
+        font-family: "Oswald", sans-serif;
+        font-size: 45px;
+        font-weight: 500;
+        overflow-wrap: normal;
+        margin: auto; }
+    .popUpContainer .popUpBox .popUpContent {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 350px; }
+      .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper {
+        padding: 5px;
+        padding-bottom: 8px;
+        margin: auto; }
+        .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper h2 {
+          color: #1e1e1e;
+          font-family: "Oswald", sans-serif;
+          font-size: 25px;
+          font-weight: 500;
+          letter-spacing: 0.1px; }
+        .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper #openingHours, .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper #phone, .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper #location {
+          padding: 2.5px; }
+        .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper p {
+          color: #1e1e1e;
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          width: 250px;
+          margin: auto; }
+        .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper .yesNoButtonWrapper, .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper .confirmButtonWrapper {
+          padding-top: 15px; }
+        .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper #phoneUs, .popUpContainer .popUpBox .popUpContent .popUpInfoWrapper #callUs {
+          padding-top: 15px; }
+
+.homepageContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .homepageContainer .homepageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .homepageContainer .homepageWrapper .homepageContentWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+    .homepageContainer .homepageWrapper .chipIllustrationWrapper {
+      display: none; }
+
+.homepageNavWrapper {
+  display: none; }
+
+.orderNavWrapper {
+  background-color: #1e1e1e;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px; }
+  .orderNavWrapper .orderLogoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .orderNavWrapper .orderLogoWrapper a {
+      position: absolute;
+      width: 190px;
+      height: 60px; }
+  .orderNavWrapper .orderIconSection {
+    width: 150px;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center; }
+  .orderNavWrapper .orderIconSectionDesktop {
+    display: none; }
+  .orderNavWrapper .navBars {
+    position: relative; }
+  .orderNavWrapper .menuNav, .orderNavWrapper .menuMaoriNav {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .orderNavWrapper .menuMaoriNav {
+    position: absolute;
+    top: 0;
+    display: none;
+    flex-direction: row; }
+
+.active {
+  display: flex !important; }
+
+.menuAndCartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .menuAndCartContainer .menuContainer {
+    width: 95vw;
+    padding-top: 10px; }
+    .menuAndCartContainer .menuContainer .menuItemsWrapper {
+      background-color: white;
+      max-height: 335px;
+      overflow-y: auto; }
+    .menuAndCartContainer .menuContainer .itemsContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      border: solid 1px #2d2d2d;
+      padding: 10px;
+      margin: 10px; }
+      .menuAndCartContainer .menuContainer .itemsContainer .itemDescription {
+        width: 50vw;
+        align-self: center; }
+        .menuAndCartContainer .menuContainer .itemsContainer .itemDescription h4 {
+          color: #1e1e1e;
+          font-family: "Oswald", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 0.1px; }
+        .menuAndCartContainer .menuContainer .itemsContainer .itemDescription p {
+          color: #1e1e1e;
+          font-family: "Open Sans", sans-serif;
+          font-size: 13px;
+          font-weight: 400; }
+      .menuAndCartContainer .menuContainer .itemsContainer .itemPrice {
+        color: #1e1e1e;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px;
+        margin: auto;
+        text-align: center; }
+    .menuAndCartContainer .menuContainer h2 {
+      color: #1e1e1e;
+      font-family: "Oswald", sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      text-align: center; }
+  .menuAndCartContainer .cartContainer {
+    width: 95vw;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+    .menuAndCartContainer .cartContainer .cartContentWrapper {
+      width: 100%;
+      background-color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .menuAndCartContainer .cartContainer .cartContentWrapper #yourOrder {
+        color: #1e1e1e;
+        font-family: "Oswald", sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 0.1px; }
+      .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer {
+        height: 200px;
+        width: 80vw;
+        border-bottom: solid 1.5px #1e1e1e;
+        border-top: solid 1.5px #1e1e1e;
+        overflow-y: scroll; }
+        .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #cart, .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #cartTable, .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #CartContainer {
+          width: 100%; }
+          .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #cart table, .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #cartTable table, .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #CartContainer table {
+            border-collapse: collapse; }
+            .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #cart table #template, .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #cartTable table #template, .menuAndCartContainer .cartContainer .cartContentWrapper .cartItemContainer #CartContainer table #template {
+              display: none; }
+      .menuAndCartContainer .cartContainer .cartContentWrapper .cartTotalWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 5px;
+        width: 80vw; }
+        .menuAndCartContainer .cartContainer .cartContentWrapper .cartTotalWrapper p {
+          color: #1e1e1e;
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          font-weight: 400; }
+        .menuAndCartContainer .cartContainer .cartContentWrapper .cartTotalWrapper .totalTag {
+          font-weight: 600; }
+      .menuAndCartContainer .cartContainer .cartContentWrapper .formWrapper {
+        width: 80vw;
+        margin: auto;
+        padding-top: 20px; }
+        .menuAndCartContainer .cartContainer .cartContentWrapper .formWrapper form {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 100%; }
+          .menuAndCartContainer .cartContainer .cartContentWrapper .formWrapper form input {
+            background-color: #f9f9f9;
+            color: #d6d6d6;
+            border: solid 1px #d6d6d6;
+            border-radius: 2px;
+            padding: 5px;
+            margin-top: 5px;
+            color: #1e1e1e;
+            font-family: "Open Sans", sans-serif; }
+        .menuAndCartContainer .cartContainer .cartContentWrapper .formWrapper .checkOutButton {
+          margin-top: 20px; }
+
+.orderProcessingContentContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed; }
+  .orderProcessingContentContainer .orderProcessContent {
+    text-align: center; }
+    .orderProcessingContentContainer .orderProcessContent #thankYou {
+      font-family: "Oswald", sans-serif;
+      font-size: 65px;
+      font-weight: 500;
+      color: white;
+      padding: 20px; }
+    .orderProcessingContentContainer .orderProcessContent p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: white; }
+    .orderProcessingContentContainer .orderProcessContent #orderProgressHeader {
+      padding: 20px; }
+  .orderProcessingContentContainer .timeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; }
+    .orderProcessingContentContainer .timeWrapper #approxTime {
+      font-weight: 600;
+      font-family: "Open Sans", sans-serif;
+      font-size: 22px;
+      color: white;
+      text-align: center; }
+    .orderProcessingContentContainer .timeWrapper .loadingBarWrapper {
+      margin: auto;
+      padding-top: 10px; }
+      .orderProcessingContentContainer .timeWrapper .loadingBarWrapper .checkoutProgress {
+        width: 85vw;
+        height: 30px;
+        background: #fff800;
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden; }
+        .orderProcessingContentContainer .timeWrapper .loadingBarWrapper .checkoutProgress #loadingBar {
+          width: 85vw;
+          height: 30px;
+          background: #1e1e1e;
+          position: absolute;
+          top: 0;
+          -webkit-animation: mymove 600s;
+          /* Safari 4.0 - 8.0 */
+          animation: mymove 600s;
+          /* Safari 4.0 - 8.0 */
+          /* Standard syntax */ }
+@-webkit-keyframes mymove {
+  0% {
+    left: 0px; }
+  100% {
+    left: 85vw; } }
+@keyframes mymove {
+  0% {
+    left: 0px; }
+  100% {
+    left: 85vw; } }
+  .orderProcessingContentContainer .orderImageWrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    z-index: -1;
+    align-items: center; }
+    .orderProcessingContentContainer .orderImageWrapper #mobileCheckoutImage {
+      width: 100vw;
+      bottom: 0; }
+    .orderProcessingContentContainer .orderImageWrapper #desktopCheckoutImage, .orderProcessingContentContainer .orderImageWrapper #tabletCheckoutImage {
+      width: 100vw;
+      bottom: 0;
+      display: none; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1e1e1e;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  footer .toggleLanguageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .toggleLanguageWrapper #englishToggle {
+      display: none; }
+  footer #copyrightLine {
+    text-align: center; }
+
+@media screen and (min-width: 600px) {
+  .chipIllustrationWrapper {
+    height: 25vh;
+    width: 100vw;
+    display: flex !important;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    justify-content: center;
+    overflow: hidden; }
+    .chipIllustrationWrapper .desktopChips {
+      overflow: hidden; }
+
+  .condensedLogo {
+    width: 50vh; }
+
+  .homeIcon, .locationIcon, .helpIcon {
+    width: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  .orderNowButton {
+    width: 325px; }
+
+  .popUpHeader, .popUpContent {
+    margin: auto;
+    width: 470px !important; }
+    .popUpHeader h1, .popUpContent h1 {
+      white-space: nowrap; }
+
+  .orderIconSection {
+    display: none !important; }
+
+  .orderIconSectionDesktop {
+    width: 250px;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 10px; }
+    .orderIconSectionDesktop .orderHomeIconButton,
+    .orderIconSectionDesktop .orderLocationIconButton,
+    .orderIconSectionDesktop .orderHelpIconButton {
+      background-color: transparent;
+      border: none;
+      margin-right: 15px; }
+      .orderIconSectionDesktop .orderHomeIconButton .orderHomeIcon, .orderIconSectionDesktop .orderHomeIconButton .orderLocationIcon, .orderIconSectionDesktop .orderHomeIconButton .orderHelpIcon,
+      .orderIconSectionDesktop .orderLocationIconButton .orderHomeIcon,
+      .orderIconSectionDesktop .orderLocationIconButton .orderLocationIcon,
+      .orderIconSectionDesktop .orderLocationIconButton .orderHelpIcon,
+      .orderIconSectionDesktop .orderHelpIconButton .orderHomeIcon,
+      .orderIconSectionDesktop .orderHelpIconButton .orderLocationIcon,
+      .orderIconSectionDesktop .orderHelpIconButton .orderHelpIcon {
+        width: 40px; }
+
+  #mobileCheckoutImage {
+    display: none; }
+
+  #tabletCheckoutImage {
+    display: block !important;
+    width: 100vw;
+    bottom: 0; }
+
+  .formWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .formWrapper form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%; }
+      .formWrapper form input {
+        background-color: #f9f9f9;
+        color: #d6d6d6;
+        border: solid 1px #d6d6d6;
+        border-radius: 2px;
+        padding: 5px;
+        margin-top: 5px;
+        color: #1e1e1e;
+        font-family: "Open Sans", sans-serif; }
+    .formWrapper .checkOutButton {
+      width: 60vw;
+      height: 40px;
+      background-color: #fff800;
+      color: #1e1e1e;
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      text-align: center;
+      border: none;
+      margin-left: 25px;
+      margin-bottom: 0; } }
+@media screen and (min-width: 924px) {
+  .chipIllustrationWrapper {
+    height: 35vh !important;
+    width: 100vw;
+    display: flex !important;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    justify-content: center;
+    overflow: hidden; }
+
+  .mainLogo {
+    display: block;
+    width: 75vw; }
+
+  .condensedLogo {
+    display: none; }
+
+  .mobileIconSection {
+    display: none; }
+
+  .homepageNavWrapper {
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+    .homepageNavWrapper .desktopIconSection {
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .homepageNavWrapper .desktopIconSection .homeIconButton, .homepageNavWrapper .desktopIconSection .locationIconButton, .homepageNavWrapper .desktopIconSection .helpIconButton {
+        margin: 0px;
+        margin-right: 20px; }
+        .homepageNavWrapper .desktopIconSection .homeIconButton .homeIcon, .homepageNavWrapper .desktopIconSection .homeIconButton .locationIcon, .homepageNavWrapper .desktopIconSection .homeIconButton .helpIcon, .homepageNavWrapper .desktopIconSection .locationIconButton .homeIcon, .homepageNavWrapper .desktopIconSection .locationIconButton .locationIcon, .homepageNavWrapper .desktopIconSection .locationIconButton .helpIcon, .homepageNavWrapper .desktopIconSection .helpIconButton .homeIcon, .homepageNavWrapper .desktopIconSection .helpIconButton .locationIcon, .homepageNavWrapper .desktopIconSection .helpIconButton .helpIcon {
+          width: 60px; }
+
+  .homepageContainer {
+    justify-content: flex-start; }
+    .homepageContainer .homepageContentWrapper {
+      padding-top: 150px; }
+    .homepageContainer .orderNowButtonWrapper {
+      padding-top: 100px; }
+    .homepageContainer .chipIllustrationWrapper {
+      height: 50vh; }
+      .homepageContainer .chipIllustrationWrapper .desktopChips {
+        width: 100vw; }
+
+  .orderIconSectionDesktop {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 10px; }
+    .orderIconSectionDesktop .orderHomeIconButton,
+    .orderIconSectionDesktop .orderLocationIconButton,
+    .orderIconSectionDesktop .orderHelpIconButton {
+      background-color: transparent;
+      border: none;
+      margin-right: 15px; }
+      .orderIconSectionDesktop .orderHomeIconButton .orderHomeIcon, .orderIconSectionDesktop .orderHomeIconButton .orderLocationIcon, .orderIconSectionDesktop .orderHomeIconButton .orderHelpIcon,
+      .orderIconSectionDesktop .orderLocationIconButton .orderHomeIcon,
+      .orderIconSectionDesktop .orderLocationIconButton .orderLocationIcon,
+      .orderIconSectionDesktop .orderLocationIconButton .orderHelpIcon,
+      .orderIconSectionDesktop .orderHelpIconButton .orderHomeIcon,
+      .orderIconSectionDesktop .orderHelpIconButton .orderLocationIcon,
+      .orderIconSectionDesktop .orderHelpIconButton .orderHelpIcon {
+        width: 50px; }
+
+  .navBar {
+    width: 100%; }
+    .navBar .navButton, .navBar .maoriNav {
+      width: 110px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+  #tabletCheckoutImage {
+    display: none !important; }
+
+  #desktopCheckoutImage {
+    display: block !important;
+    width: 100vw;
+    bottom: 0; }
+
+  .quantityButton {
+    min-width: 100px; } }
+.navButton:hover {
+  background: white; }
+  .navButton:hover a {
+    color: #2d2d2d; }
+
+.maoriNav:hover {
+  background: white; }
+  .maoriNav:hover a {
+    color: #2d2d2d; }
+
+/*# sourceMappingURL=style.css.map */

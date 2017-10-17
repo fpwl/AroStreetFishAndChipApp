@@ -1,0 +1,55 @@
+@import "partials/utilities/variables";
+@import "partials/utilities/mixins";
+
+
+
+	#CartContainer{
+	width: 100%;
+	@include secondaryFontStyles;
+	font-size: $secondaryFontSize;
+		tr{
+			width:100%;
+			
+			display: flex;
+			justify-content:space-around;
+			align-items:center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			td{
+				height: 30px;
+				display: flex;
+				align-items:center;
+				justify-content:center;
+			}
+			#product_price{
+				display: none;
+			}
+			#product_quantity{
+				width:3vw;
+				text-align: center;
+				font-weight: 600;
+			}
+			.product_title{
+				width: 35vw;
+				text-align: left;
+				justify-content:flex-start;
+			}
+			#sub_price{
+				width: 10vw;
+				text-align: center;
+
+			}
+			#cartQuantityButton{
+				width:10vw;
+				text-align: center;
+				justify-content:center;
+				align-items:center;
+				button {
+				display: flex;
+				align-items:center;
+				justify-content:center;
+				font-size: 16px;
+				}
+			}
+		}
+	}

@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- FAVICON LINK -->
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
+
+		<title>CHECKOUT | Aro Street Fish and Chips</title>
+	</head>
+
+	<body>
+		<!-- ICON POPUPS --> 
+		<section class="locationPopUp">
+			<div class="popUpContainer">
+				<div class="popUpBox">
+					<div class="popUpHeader">
+						<span class="close">
+							<button class="closeButton"><img src="img/icons/closeButton.png" class="closeButton" alt="closeButton"/></button>
+						</span>
+						<h1>STORE INFORMATION</h1>
+					</div>
+					<div class="popUpContent">
+						<div class="popUpInfoWrapper">
+							<h2 id="openingHours">OPENING HOURS</h2>
+							<p>Sun & Mon: 5-9:30pm<br>Tues - Thurs & Sat: 8-9:30pm<br>Fri: 2-10:00pm</p>
+						</div>
+						<div class="popUpInfoWrapper">
+							<h2 id="phone">PHONE</h2>
+							<p>04 385 8306</p>
+						</div>
+						<div class="popUpInfoWrapper">
+							<h2 id="location">LOCATION</h2>
+							<p>85 Aro Street<br>Aro Valley<br>Wellington 6021<br>New Zealand</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="helpPopUp">
+			<div class="popUpContainer">
+				<div class="popUpBox">
+					<div class="popUpHeader">
+						<span class="close">
+							<button class="closeButton"><img src="img/icons/closeButton.png" class="closeButton" alt="closeButton"/></button>
+						</span>
+						<h1>NEED HELP?</h1>
+					</div>
+					<div class="popUpContent">
+						<div class="popUpInfoWrapper">
+							<p>Want to know if we have any specials or you have questions about our menu?</p> <p id="callUs">Give our store a call!</p> <p id="phoneUs"><b>04 385 8306</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PAGE CONTENT -->
+				<div class="orderPageContentContainer">
+					<div class="orderNavContainer">
+						<div class="orderNavWrapper">
+							<!-- <button id="homeImage"><a href="index.html"></a></button> -->
+							<div class="orderLogoWrapper">
+								<a href="index.html"></a>
+								<img src="img/logo/mainLogo.png" class="orderMainLogo" alt="logo"/>
+							</div>
+							<div class="orderIconSection">
+								<form style="display: inline" action="index.html" method="get">
+									<button class="orderHomeIconButton"><img src="img/icons/homeIcon.png" class="orderHomeIcon" alt="icon"/></button>
+								</form>
+								<button class="orderLocationIconButton"><img src="img/icons/locationIcon.png" class="orderLocationIcon" alt="icon"/></button>
+								<button class="orderHelpIconButton"><img src="img/icons/helpIcon.png" class="orderHelpIcon" alt="icon"/></button>
+							</div>
+							<div class="orderIconSectionDesktop">
+								<form style="display: inline" action="index.html" method="get">
+									<button class="orderHomeIconButton"><img src="img/icons/homeIcon.png" class="orderHomeIcon" alt="icon"/></button>
+								</form>
+								<button class="orderLocationIconButton"><img src="img/icons/locationIcon.png" class="orderLocationIcon" alt="icon"/></button>
+								<button class="orderHelpIconButton"><img src="img/icons/helpIcon.png" class="orderHelpIcon" alt="icon"/></button>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<section class="orderProcessingContentContainer">
+					<div class="orderProcessContentWrapper">
+						<div class="orderProcessContent">
+							<h1 id="thankYou">THANK YOU!</h1>
+							<p>Your order has been placed.<br>Please pick up your order at<br>85 Aro Street, Aro Valley</p>
+							<p id="orderProgressHeader">View your order progress below</p>
+						</div>
+							
+						<div class="timeWrapper">
+							<p id="approxTime">APPROX WAIT TIME: 10mins</p>
+							<div class="loadingBarWrapper">
+								<div class="checkoutProgress">
+	  								<div id="loadingBar"></div>
+								</div>
+							</div>
+							<form style="display: inline" action="index.html" method="get">
+								<button id="doneButton">DONE</button>
+							</form>
+						</div>
+
+						<div class="orderImageWrapper">
+							<img src="img/illustrations/mobileCheckout.png" id="mobileCheckoutImage" alt="checkoutImage">
+							<img src="img/illustrations/tabletCheckout.png" id="tabletCheckoutImage" alt="checkoutImage">
+							<img src="img/illustrations/desktopCheckout.png" id="desktopCheckoutImage" alt="checkoutImage">
+						</div>
+					</div>
+
+				</section>
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/interactions.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,158 @@
+@import "partials/utilities/variables";
+@import "partials/utilities/mixins";
+
+.orderNowButton{
+	background-color: $primaryColor;
+	border-radius: $borderRadius;
+	width:325px;
+	height:105px;
+	border:none;
+	margin-top:10px;
+	cursor: pointer;
+	@include h1HeadersStyle;
+	text-decoration: none;
+}
+#doneButton{
+	background-color: $primaryColor;
+	border-radius: $borderRadius;
+	width:220px;
+	height:55px;
+	border:none;
+	margin-top:15px;
+	cursor: pointer;
+	@include h2HeadersStyle;
+	text-decoration: none;
+}
+
+.homeIconButton,
+.locationIconButton,
+.helpIconButton{
+	background-color: transparent;
+	border:none;
+	margin:20px;
+	cursor: pointer;
+}
+
+.orderHomeIconButton,
+.orderLocationIconButton,
+.orderHelpIconButton{
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+
+	.orderHomeIcon, .orderLocationIcon, .orderHelpIcon{
+		width:35px;
+	}
+}
+
+.closeButton{
+	width:15px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.yesButton, .goBackButton{
+	@include buttonStyles;
+	@include h3HeadersStyle;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.goBackButton{
+	@include h3HeadersStyle;
+	font-weight: 400;
+	margin: 2.5px;
+	cursor: pointer;
+}
+
+.noButton, .confirmButton{
+	@include buttonStyles;
+	@include h3HeadersStyle;
+	background-color: $primaryColor;
+	font-weight: 400;
+	margin:2.5px;
+	cursor: pointer;
+}
+
+.confirmButton{
+	width: 155px;
+	cursor: pointer;
+}
+.navButton, .maoriNav {
+	margin-top: 10px;
+	margin-left:3px;
+	margin-right:3px;
+	background: $tertiaryColor;
+	width:90px;
+	height: 30px;
+	border-radius: 3px;
+	text-align: center;
+	flex-direction:row;
+	cursor: pointer;
+}
+
+	a{
+		@include navh3HeadersStyle;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+.activeButton{
+	background: white;
+	a{
+		color:$tertiaryColor;
+	}
+}
+
+.quantityButton{
+	min-width:30px;
+	background-color: $primaryColor;
+	@include h2HeadersStyle;
+	border: none;
+	padding-left:15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin:5px;
+	cursor: pointer;
+}
+
+.cartQuantityButton, .cartQuantityButtonAdd{
+	width:45vw;
+	// height: 5px;
+	background-color: $primaryColor;
+	@include h2HeadersStyle;
+	text-align: center;
+	border: none;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.cartQuantityButtonAdd{
+	margin-right:2.5px;
+	cursor: pointer;
+}
+
+
+.checkOutButton{
+	width:80vw;
+	height: 50px;
+	background-color: $primaryColor;
+	@include h3HeadersStyle;
+	border: none;
+	cursor: pointer;
+}
+
+#maoriToggle, #englishToggle{
+	background: transparent;
+	border:none;
+	padding:2.5px;
+	@include secondaryFontStyles;
+	color: $primaryColor;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+}

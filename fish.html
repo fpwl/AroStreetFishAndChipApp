@@ -1,0 +1,272 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- FAVICON LINK -->
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
+
+		<title>ORDER | Aro Street Fish and Chips</title>
+	</head>
+
+	<body>
+
+		<!-- ICON POPUPS -->
+		<section class="homePopUp">
+			<div class="popUpContainer">
+				<div class="popUpBox">
+					<div class="popUpHeader">
+						<span class="close">
+							<button class="closeButton"><img src="img/icons/closeButton.png" class="closeButton" alt="closeButton"/></button>
+						</span>
+						<h1>ARE YOU SURE?</h1>
+					</div>
+					<div class="popUpContent">
+						<div class="popUpInfoWrapper">
+							<p>Are you sure you would like to leave your order progress?</p> 
+							<div class="yesNoButtonWrapper">
+								<form style="display: inline" action="index.html" method="get">	
+									<button class="yesButton">YES</button>
+								</form>
+								<button class="noButton">NO</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="locationPopUp">
+			<div class="popUpContainer">
+				<div class="popUpBox">
+					<div class="popUpHeader">
+						<span class="close">
+							<button class="closeButton"><img src="img/icons/closeButton.png" class="closeButton" alt="closeButton"/></button>
+						</span>
+						<h1>STORE INFORMATION</h1>
+					</div>
+					<div class="popUpContent">
+						<div class="popUpInfoWrapper">
+							<h2 id="openingHours">OPENING HOURS</h2>
+							<p>Sun & Mon: 5-9:30pm<br>Tues - Thurs & Sat: 8-9:30pm<br>Fri: 2-10:00pm</p>
+						</div>
+						<div class="popUpInfoWrapper">
+							<h2 id="phone">PHONE</h2>
+							<p>04 385 8306</p>
+						</div>
+						<div class="popUpInfoWrapper">
+							<h2 id="location">LOCATION</h2>
+							<p>85 Aro Street<br>Aro Valley<br>Wellington 6021<br>New Zealand</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="helpPopUp">
+			<div class="popUpContainer">
+				<div class="popUpBox">
+					<div class="popUpHeader">
+						<span class="close">
+							<button class="closeButton"><img src="img/icons/closeButton.png" class="closeButton" alt="closeButton"/></button>
+						</span>
+						<h1>NEED HELP?</h1>
+					</div>
+					<div class="popUpContent">
+						<div class="popUpInfoWrapper">
+							<p>Want to know if we have any specials or you have questions about our menu?</p> <p id="callUs">Give our store a call!</p> <p id="phoneUs"><b>04 385 8306</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CHECKOUT POP UP -->
+		<section class="checkoutPopUp">
+			<div class="popUpContainer">
+				<div class="popUpBox">
+					<div class="popUpHeader">
+						<span class="close">
+							<button class="closeButton"><img src="img/icons/closeButton.png" class="closeButton" alt="closeButton"/></button>
+						</span>
+						<h1>ORDER CONFIRMATION</h1>
+					</div>
+					<div class="popUpContent">
+						<div class="popUpInfoWrapper">
+							<p>By clicking confirm you understand and agree you are required to pick up your order at our store and payment must be paid upon pick up. </p>
+
+							<div class="confirmButtonWrapper">
+								<button class="goBackButton">Go Back</button>
+								<form style="display: inline" action="checkOut.html" method="get">	
+									<button class="confirmButton">CONFIRM</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- PAGE CONTENT-->
+
+		<section class="orderPageContentContainer">
+			<div class="orderNavContainer">
+				<div class="orderNavWrapper">
+					<div class="orderLogoWrapper">
+						<img src="img/logo/mainLogo.png" class="orderMainLogo" alt="logo"/>
+					</div>
+					<div class="orderIconSection">
+						<button class="orderHomeIconButton"><img src="img/icons/homeIcon.png" class="orderHomeIcon" alt="icon"/></button>
+						<button class="orderLocationIconButton"><img src="img/icons/locationIcon.png" class="orderLocationIcon" alt="icon"/></button>
+						<button class="orderHelpIconButton"><img src="img/icons/helpIcon.png" class="orderHelpIcon" alt="icon"/></button>
+					</div>
+					<div class="orderIconSectionDesktop">
+						<button class="orderHomeIconButton"><img src="img/icons/homeIcon.png" class="orderHomeIcon" alt="icon"/></button>
+						<button class="orderLocationIconButton"><img src="img/icons/locationIcon.png" class="orderLocationIcon" alt="icon"/></button>
+						<button class="orderHelpIconButton"><img src="img/icons/helpIcon.png" class="orderHelpIcon" alt="icon"/></button>
+					</div>
+					<div class="navBars">
+						<div class="menuNav">
+							<div class="fishButton navButton englishNav activeButton"><a href="fish.html">fish</a></div>
+							<div class="chipsButton navButton englishNav"><a href="chips.html">chips</a></div>	
+							<div class="burgersButton navButton englishNav"><a href="burgers.html">burger</a></div>	
+							<div class="toastiesButton navButton englishNav"><a href="toasties.html">toasties</a></div>
+							<div class="sidesButton navButton englishNav"><a href="sides.html">sides</a></div>
+							<div class="sweetsButton navButton englishNav"><a href="sweets.html">sweets</a></div>
+							<div class="bdrinksButton navButton englishNav"><a href="drinks.html">drinks</a></div>
+						</div>
+						<div class="menuMaoriNav">
+							<div class="fishButton maoriNav activeButton"><a href="fish.html">ngohi</a></div>
+							<div class="chipsButton maoriNav"><a href="chips.html">titipi</a></div>	
+							<div class="burgersButton maoriNav"><a href="burgers.html">paka</a></div>	
+							<div class="toastiesButton maoriNav"><a href="toasties.html">tohi</a></div>
+							<div class="sidesButton maoriNav"><a href="sides.html">kinaki</a></div>
+							<div class="sweetsButton maoriNav"><a href="sweets.html">rare</a></div>
+							<div class="bdrinksButton maoriNav"><a href="drinks.html">waireka</a></div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+			<div class="menuAndCartContainer">
+				<div class="menuContainer">
+					<div class="menuItemsWrapper">
+						<div class="itemsContainer product ">
+							<div class="itemDescription">
+								<h4 class="product_title">Battered Fish</h4>
+								<p class="product_description">A battered blue Warehou or Mora Moro (Ribaldo).<br><i>Fish avalibility varies</i></p>
+							</div>
+							<p class="itemPrice">$<span class="productPrice product_price">3.50</span></p>
+							<button class="quantityButton add">+</button>
+							<button class="quantityButton remove">-</button>
+						</div>
+
+						<div class="itemsContainer product">
+							<div class="itemDescription">
+								<h4 class="product_title">Small Crumbed Fillet</h4>
+								<p class="product_description">A crumbed blue Warehou or Mora Moro (Ribaldo).<br><i> Fish avalibility varies</i></p>
+							</div>
+							<p class="itemPrice">$<span class="productPrice product_price">5.00</span></p>
+							<button class="quantityButton add">+</button>
+							<button class="quantityButton remove">-</button>
+						</div>
+
+						<div class="itemsContainer product">
+							<div class="itemDescription">
+								<h4 class="product_title">Large Battered Fillet</h4>
+								<p class="product_description">A large fillet of battered blue Warehou or Mora Moro (Ribaldo).<br><i> Fish avalibility varies</i></p>
+							</div>
+							<p class="itemPrice">$<span class="productPrice product_price">9.00</span></p>
+							<button class="quantityButton add">+</button>
+							<button class="quantityButton remove">-</button>
+						</div>
+
+						<div class="itemsContainer product">
+						<div class="itemDescription">
+								<h4 class="product_title">Large Crumbed Fillet</h4>
+								<p class="product_description">A large fillet of crumbed blue Warehou or Mora Moro (Ribaldo).<br><i> Fish avalibility varies</i></p>
+							</div>
+							<p class="itemPrice">$<span class="productPrice product_price">9.00</span></p>
+							<button class="quantityButton add">+</button>
+							<button class="quantityButton remove">-</button>
+						</div>
+
+						<div class="itemsContainer product">
+							<div class="itemDescription">
+								<h4 class="product_title">Tarakihi Fillet</h4>
+								<p class="product_description">A battered or crumbed Tarakihi fillet</p>
+							</div>
+							<p class="itemPrice">$<span class="productPrice product_price">9.00</span></p>
+							<button class="quantityButton add">+</button>
+							<button class="quantityButton remove">-</button>
+						</div>
+
+						<div class="itemsContainer product">
+							<div class="itemDescription">
+								<h4 class="product_title">Fish Dinner</h4>
+								<p class="product_description">Two small crumbed fillets with chips, coleslaw, sauce and wedges of lemon</p>
+							</div>
+							<p class="itemPrice">$<span class="productPrice product_price">13.50</span></p>
+							<button class="quantityButton add">+</button>
+							<button class="quantityButton remove">-</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="cartContainer">
+					<div class="cartContentWrapper">
+						<h3 id="yourOrder">YOUR ORDER (<span class="cartCount"></span>)</h3>
+						<div class="cartItemContainer">
+							<div id="cart">
+								<table id="cartTable">
+									<tbody id="CartContainer">
+										<tr id="template" class="product">
+											<td id="product_quantity">x<span class="product_quantity"></span></td>
+											<td class="product_title"></td>
+											<td id="product_price">$<span class='product_price'></span></td>
+											<td id="sub_price">$<span class='sub_price'></span></td>
+											<td id="cartQuantityButton"><button class='cartQuantityButtonAdd add'>+</button><button class='cartQuantityButton remove'>-</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="cartTotalWrapper">
+							<p class="totalTag">TOTAL:</p>
+							<p>$<span class="priceCount"></span>NZD</p>
+						</div>
+
+						<div class="formWrapper">
+							<form>
+								<input type="text" name="name" placeholder="Name:">
+								<input type="number" name="phone" placeholder="Phone:">
+							</form>
+							<button class="checkOutButton">CHECKOUT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="toggleLanguageWrapper">
+					<p>Toggle Language:</p>
+					<button id="maoriToggle">Te Reo Maori</button>
+					<button id="englishToggle">English</button>
+				</div>
+				<p id="copyrightLine">&copy; 2017 Website by Florence Lo | Used for educational purposes only</p>
+			</footer>
+		</section>
+
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/interactions.js"></script>
+		<script src="js/cartFunction.min.js"></script>
+	</body>
+
+</html>

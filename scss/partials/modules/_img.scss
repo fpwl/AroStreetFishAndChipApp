@@ -1,0 +1,22 @@
+@import "partials/utilities/variables";
+@import "partials/utilities/mixins"; 
+
+//IMAGE SCALING//
+.condensedLogo{
+	max-width: 75vw;
+}
+.mainLogo{
+	display:none
+}
+.orderMainLogo{
+	width:190px;
+}
+.desktopCheckoutImage{
+	max-width: 414px;
+}
+
+//Adding button icon//
+.locationIcon,
+.helpIcon{
+	width:60px;
+}

@@ -1,0 +1,638 @@
+@import "partials/utilities/variables";
+@import "partials/utilities/mixins";
+
+@import "partials/modules/buttons";
+@import "partials/modules/img";
+
+@import "partials/layout/table";
+
+
+*{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+body{
+	background: $tertiaryColor;
+	width: 100%;
+	height:100%;
+}
+
+//Pop Up Box Sections//
+.homePopUp, .locationPopUp, .helpPopUp, .menuPopUp, .checkoutPopUp{
+	display: none;
+}
+
+.popUpContainer{
+	@include popUpContainer;
+
+	.popUpBox{
+		// width:350px;
+		margin:10px;
+		text-align: center;
+		.popUpHeader{
+			@include popUpHeader;
+			display: flex;
+			flex-direction:row;
+			width:350px;
+
+			.close{
+				position: absolute;
+				margin:10px;
+			}
+			h1{
+				@include h1HeadersStyle;
+				overflow-wrap:normal; 		
+				margin: auto;
+			}
+		}
+		.popUpContent{
+			@include popUpContent;
+			width:350px;
+
+			.popUpInfoWrapper{
+				padding: 5px;
+				padding-bottom:8px;
+				margin:auto;
+
+				h2{
+					@include h2HeadersStyle;
+				}
+				#openingHours, #phone, #location{
+					padding:2.5px;
+				}
+				p{
+					@include popUpContentFontSize;
+					width: 250px;
+					margin:auto;
+				}
+				.yesNoButtonWrapper, .confirmButtonWrapper{
+					padding-top:15px;
+				}
+				#phoneUs, #callUs{
+					padding-top: 15px;
+				}
+			}		
+		}
+	}
+}
+
+//Index homepage styles//
+.homepageContainer{
+	height: 100vh; 
+	display: flex; 
+	flex-direction:column;
+	align-items: center; 
+	justify-content: center;
+
+	.homepageWrapper{
+		display: flex; 
+		align-items: center; 
+		justify-content: center;
+
+		.homepageContentWrapper{
+			display:flex;
+			flex-wrap:wrap;
+			flex-direction:column;
+			width: 100%;
+			justify-content:center;
+			align-items:center;
+		}
+		.chipIllustrationWrapper{
+			display: none;
+		}
+	}
+}
+
+.homepageNavWrapper{
+	display:none;
+}
+
+// //Menu page styles//
+.orderNavWrapper{
+	@include orderNavWrapper;
+	.orderLogoWrapper{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		a{
+			position: absolute;
+			// z-index: 1;
+			width:190px;
+			height: 60px;
+		}
+	}
+	.orderIconSection{
+		width:150px;
+		display: flex;
+		padding-top: 10px;
+		justify-content:space-between;
+		align-items:center
+
+	}
+	.orderIconSectionDesktop{
+		display: none;
+	}
+
+	.navBars{
+		position: relative;
+	}
+		.menuNav, .menuMaoriNav{
+			padding-top: 5px;
+			padding-bottom:10px;
+		  	display:flex;
+			flex-wrap: wrap;
+			justify-content:center;
+			align-items:center;
+			width: 100%;
+		}
+		.menuMaoriNav{
+			position: absolute;
+			top:0;
+			display: none;
+			flex-direction:row;
+		}
+
+}
+
+.active {
+	display: flex!important;
+}
+
+
+.menuAndCartContainer{
+	display: flex;
+	flex-direction:column;
+	// justify-content:center;
+	align-items:center;
+
+	.menuContainer{
+		width:95vw;
+		padding-top:10px;
+		.menuItemsWrapper{
+			background-color: white;
+			max-height:335px;
+			overflow-y: auto;
+		}
+		.itemsContainer{
+			@include itemsContainerStyle;
+			.itemDescription{
+				width: 50vw;
+				align-self:center;
+				h4{
+					@include h4HeadersStyle;
+				}
+				p{
+					@include secondaryFontStyles;
+					font-size: $secondaryFontSize;
+					font-weight: 400;
+				}
+			}
+			.itemPrice{
+				@include secondaryFontStyles;
+				font-size: 16px;
+				font-weight: 600;
+				padding:15px;
+				margin: auto;
+				text-align: center;
+
+			}
+		}
+		h2{
+			@include h2HeadersStyle;
+			text-align: center;
+		}
+	}
+
+	.cartContainer{
+		width:95vw;
+		padding-top:20px;
+		padding-bottom:10px;
+		.cartContentWrapper{
+			width: 100%;
+			background-color: white;
+			padding-top:20px;
+			padding-bottom:20px;
+			display: flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+			#yourOrder{
+				@include h2HeadersStyle;
+			}
+			.cartItemContainer{
+				height: 200px;
+				width:80vw;
+				border-bottom: solid 1.5px $secondaryColor;
+				border-top: solid 1.5px $secondaryColor;
+				overflow-y: scroll;
+
+				#cart, #cartTable, #CartContainer{
+					width: 100%;
+						table{
+							border-collapse:collapse;
+
+							#template{
+								display: none;
+							}				
+						}
+					}		
+				}			
+			.cartTotalWrapper{
+				display: flex;
+				justify-content:space-between;
+				margin: auto;
+				padding-top: 5px;
+				width:80vw;
+				p{
+					@include popUpContentFontSize;
+				}
+				.totalTag{
+					font-weight: 600;
+				}
+			}
+			.formWrapper{
+				width:80vw;
+				margin:auto;
+				padding-top:20px;
+				form{
+					display: flex;
+					flex-direction:column;
+					flex-wrap:wrap;
+					width: 100%;
+					
+					input{
+						background-color: $lightGreyColor;
+						color:#d6d6d6;
+						border: solid 1px #d6d6d6;
+						border-radius: 2px;
+						padding:5px;
+						margin-top:5px; 
+						@include secondaryFontStyles;
+					}
+				}
+				.checkOutButton{
+				margin-top: 20px;
+				}
+			}			
+		}
+	}
+}
+
+.orderProcessingContentContainer{
+	height: 100vh;
+	width:100vw;
+	position: fixed;
+	.orderProcessContent{
+		text-align: center;
+		#thankYou{
+			font-family: $primaryFont;
+			font-size: 65px;
+			font-weight: 500;
+			color: white;
+			padding:20px;
+		}
+		p{
+			font-family: $secondaryFont;
+			font-size: 20px;
+			font-weight: 400;
+			color: white;
+		}
+		#orderProgressHeader{
+			padding: 20px;
+		}
+	}
+	.timeWrapper{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		padding-top:20px;
+
+		#approxTime{
+			font-weight: 600;	
+			font-family: $secondaryFont;
+			font-size: 22px;
+			color: white;
+			text-align: center;
+		}
+		.loadingBarWrapper{
+			margin:auto;
+			padding-top:10px;
+
+			.checkoutProgress {
+			    width: 85vw;
+			    height: 30px;
+			    background: $primaryColor;
+			    position:relative;
+			    border-radius: 25px;
+			    overflow:hidden;
+
+			    #loadingBar {
+				width:85vw;
+				height: 30px;
+			    background: $secondaryColor;
+			    position: absolute;
+			    top:0;
+				-webkit-animation: mymove 600s; /* Safari 4.0 - 8.0 */
+			    animation: mymove 600s;
+
+					/* Safari 4.0 - 8.0 */
+					@-webkit-keyframes mymove {
+					    0%   {left: 0px;}
+					    100% {left: 85vw;}
+					}
+
+					/* Standard syntax */
+					@keyframes mymove {
+					    0%   {left: 0px;}
+					    100% {left: 85vw;}
+					}
+				}
+			}	
+		}
+	}
+	.orderImageWrapper{
+		position: fixed;
+		bottom: 0;
+		width:100vw;
+		overflow: hidden;
+		display: flex;
+		z-index:-1;
+		align-items:center;
+		#mobileCheckoutImage{
+			width:100vw;
+			bottom:0;
+		}
+		#desktopCheckoutImage, #tabletCheckoutImage{
+			width:100vw;
+			bottom:0;
+			display: none;
+		}
+	}
+}
+
+footer{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+		@include secondaryFontStyles;
+		color: white;
+		font-size: 12px;
+		padding-top:20px;
+		padding-bottom:30px;
+
+
+		
+
+	.toggleLanguageWrapper{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+
+		#englishToggle{
+			display: none;
+		}
+	}
+	#copyrightLine{
+		text-align: center;
+	}
+}
+
+// ---------------- MEDIA QUERIES ---------------- //
+
+@media screen and (min-width: 600px){
+	.chipIllustrationWrapper {
+		height: 25vh;
+		width:100vw;
+		display: flex!important;
+		position: absolute;
+		bottom:0;
+		z-index: -1;
+		justify-content:center;
+		overflow: hidden;
+		.desktopChips{
+			overflow: hidden;
+		}
+	}	
+
+	.condensedLogo{
+		width: 50vh;
+	}
+
+	.homeIcon, .locationIcon, .helpIcon{
+		width:80px;
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+
+	.orderNowButton{
+		width:325px;
+	}	
+
+	.popUpHeader, .popUpContent{
+		margin:auto;
+		width:470px!important;
+		h1{
+			white-space: nowrap;		
+		}
+	}
+	.orderIconSection{
+		display: none!important;
+	}
+	.orderIconSectionDesktop{
+		width:250px;
+		display: flex!important;
+		flex-wrap:wrap;
+		flex-direction:row;
+		justify-content:flex-end;
+		align-items:center;
+		position: absolute;
+		top:25px;
+		right:10px;
+
+		.orderHomeIconButton,
+		.orderLocationIconButton,
+		.orderHelpIconButton{
+			background-color: transparent;
+			border:none;
+			margin-right: 15px;
+			.orderHomeIcon, .orderLocationIcon, .orderHelpIcon{
+				width:40px;
+			}
+			a{
+
+			}
+		}
+	}
+	#mobileCheckoutImage{
+		display:none;
+	}
+	#tabletCheckoutImage{
+		display: block!important;
+		width:100vw;
+		bottom:0;
+	}
+
+	.formWrapper{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items:center;
+
+		form{
+			display: flex;
+			flex-direction:column;
+			flex-wrap:wrap;
+			width: 100%;
+			input{
+				background-color: $lightGreyColor;
+				color:#d6d6d6;
+				border: solid 1px #d6d6d6;
+				border-radius: 2px;
+				padding:5px;
+				margin-top:5px; 
+				@include secondaryFontStyles;
+			}
+		}
+		.checkOutButton{
+			width:60vw;
+			height: 40px;
+			background-color: $primaryColor;
+			@include h3HeadersStyle;
+			border: none;
+			margin-left:25px;
+			margin-bottom: 0;
+		}
+	}
+	
+}
+	
+
+@media screen and (min-width:924px){
+	.chipIllustrationWrapper {
+		height: 35vh!important;
+		width:100vw;
+		display: flex!important;
+		position: absolute;
+		bottom:0;
+		z-index: -1;
+		justify-content:center;
+		overflow: hidden;
+	}
+	.mainLogo{
+		display: block;
+		width: 75vw;
+	}
+	.condensedLogo{
+		display: none;
+	}
+	.mobileIconSection{
+		display: none;
+	}
+	.homepageNavWrapper{
+		@include desktopNavWrapper;
+		.desktopIconSection{
+			height: 75px;
+			display: flex;
+			justify-content:center;
+			align-items:center;
+
+			.homeIconButton, .locationIconButton, .helpIconButton{
+				margin:0px;
+				margin-right: 20px;
+				
+				.homeIcon, .locationIcon, .helpIcon{
+					width:60px;
+
+				}
+			}
+		}
+	}
+	.homepageContainer{
+		justify-content: flex-start;
+		
+		.homepageContentWrapper{
+			padding-top: 150px;
+		}
+
+		.orderNowButtonWrapper{
+			padding-top:100px;		
+		}
+			.chipIllustrationWrapper{
+				height: 50vh;
+				.desktopChips{
+					width: 100vw;
+				}
+			}
+	}
+
+	.orderIconSectionDesktop{
+		width:30%;
+		display: flex;
+		flex-wrap:wrap;
+		flex-direction:row;
+		justify-content:flex-end;
+		position: absolute;
+		top:20px;
+		right:10px;
+		// z-index: 1;
+
+		.orderHomeIconButton,
+		.orderLocationIconButton,
+		.orderHelpIconButton{
+			background-color: transparent;
+			border:none;
+			margin-right: 15px;
+			.orderHomeIcon, .orderLocationIcon, .orderHelpIcon{
+				width:50px;
+			}
+		}
+	}
+	
+	.navBar{
+		width:100%;
+		.navButton, .maoriNav {
+			width:110px;
+			height: 40px;
+			display: flex;
+			justify-content:center;
+			align-items:center;
+		}
+	}
+
+	#tabletCheckoutImage{
+		display: none!important;
+	}
+
+	#desktopCheckoutImage{
+		display: block!important;
+		width:100vw;
+		bottom:0;
+	}
+
+	.quantityButton{
+		min-width:100px;
+	}
+}
+
+.navButton:hover {
+	background: white;
+	a{
+		color:$tertiaryColor;
+	}
+}
+
+.maoriNav:hover {
+	background: white;
+	a{
+		color:$tertiaryColor;
+	}
+}
+
+
+
+
+

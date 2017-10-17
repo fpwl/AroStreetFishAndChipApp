@@ -1,0 +1,125 @@
+@import "partials/utilities/variables";
+
+//FONT MIXINS//
+@mixin h1HeadersStyle{
+	color:$secondaryColor;
+	font-family: $primaryFont;
+	font-size: $h1FontSize;
+	font-weight: 500;
+}
+@mixin h2HeadersStyle{
+	color:$secondaryColor;
+	font-family: $primaryFont;
+	font-size: $h2FontSize;
+	font-weight: 500;
+	letter-spacing: 0.1px;
+}
+@mixin h3HeadersStyle{
+	color:$secondaryColor;
+	font-family: $primaryFont;
+	font-size: $h3FontSize;
+	font-weight: 500;
+	letter-spacing: 0.1px;
+	text-align: center;
+}
+@mixin h4HeadersStyle{
+	color:$secondaryColor;
+	font-family: $primaryFont;
+	font-size: $primaryFontSize;
+	font-weight: 400;
+	letter-spacing: 0.1px;
+}
+
+@mixin navh3HeadersStyle{
+	color:white;
+	font-family: $primaryFont;
+	font-size: $h3FontSize;
+	font-weight: 500;
+	letter-spacing: 0.1px;
+}
+@mixin secondaryFontStyles{
+	color:$secondaryColor;
+	font-family: $secondaryFont;
+}
+@mixin popUpContentFontSize{
+	color:$secondaryColor;
+	font-family: $secondaryFont;
+	font-size: $primaryFontSize;
+	font-weight: 400;
+}
+
+
+
+//NAV CONTAINTERS//
+@mixin desktopNavWrapper{
+	background-color: $secondaryColor;
+	position: fixed;
+	top:0;
+	display: flex;
+	justify-content:flex-end;
+	width: 100%;
+}
+
+@mixin orderNavWrapper{
+	background-color: $secondaryColor;
+	width:100%;
+	display: flex; 
+	flex-direction:column;
+	justify-content: center;
+	align-items: center; 
+	padding-top:15px;
+	padding-bottom:10px;
+}
+
+//MENU ITEM CONTAINERS//
+@mixin itemsContainerStyle{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:stretch;
+	border:solid 1px $tertiaryColor;
+	padding:10px;
+	margin: 10px;
+}
+
+
+//POP UP CONTAINERS//
+@mixin popUpContainer{
+	position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: $popUpBackgroundColor;
+    width:100%;
+    height:100%;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin popUpHeader{
+	background-color: $primaryColor;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+@mixin popUpContent{
+	background-color: white;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+//BUTTON STYLES//
+@mixin buttonStyles{
+	width: 95px;
+	height: 45px;
+	border-radius: $borderRadius;
+	border: none;
+	margin:5px;
+}
